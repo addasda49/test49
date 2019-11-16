@@ -2,9 +2,12 @@ from tkinter import *
 
 root = Tk()
 
-e = Entry(root, width=20)
-b = Button(root, text="Just a Button")
-l = Label(root, bg='black', fg='white', width=20)
+e = Entry(root, width=40, bg = 'blue')
+b = Button(root, text="Sort", width=29, bg = 'red', font = 'Arial 10')
+l = Label(root, bg='black', fg='white', width=34)
+
+root.title('Sorter')
+root.geometry('250x200')
 
 def str_to_list(event):
     s = e.get()
